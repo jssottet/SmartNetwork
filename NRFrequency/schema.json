@@ -1,0 +1,49 @@
+{
+  "/Instructions for creating your schema": {},
+  "$schema": "http://json-schema.org/schema",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.NRFrequency/NRFrequency/schema.json",
+  "title": "Smart Data models -NRFrequency schema\"",
+  "modelTags": "\"\"",
+  "description": "This IOC represents certain NR frequency",
+  "required": [
+    "id",
+    "type"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "absoluteFrequencySSB": {
+          "type": "number",
+          "minimum": "0",
+          "maximum": "3279165",
+          "description": "The absolute frequency applicable for a downlink NR carrier frequency associated with the SSB. allowedValues: {0.. 3279165}."
+        },
+        "sSBSubCarrierSpacing": {
+          "type": "number",
+          "enum": [
+            15,
+            30,
+            120,
+            240
+          ],
+          "description": "This SSB is used for synchronization. Its units are in kHz. allowedValues: {15, 30, 120, 240}."
+        },
+        "multiFrequencyBandListNR": {
+          "type": "number",
+          "minimum": "1",
+          "maximum": "256",
+          "description": "It is a list of additional frequency bands the frequency belongs to. The list is automatically set by the gNB. allowedValues: {1..256 }"
+        }
+      }
+    }
+  ],
+  "derivedFrom": "\"3GPP- TS 28.451\"",
+  "license": "\"\""
+}
