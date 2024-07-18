@@ -1,0 +1,83 @@
+{
+  "/Instructions for creating your schema": {},
+  "$schema": "http://json-schema.org/schema",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.BWP/BWP/schema.json",
+  "title": "Smart Data models -BWP schema\"",
+  "modelTags": "\"\"",
+  "description": "This Class represents a bandwidth part (BWP) defined in 3GPP TS 38.211. A bandwidth part is related to downlink, uplink or supplementary uplink resource grids, and is defined by its subcarrier spacing (SCS), cyclic prefix and location and size related to the common resource grid for the applicable SCS.",
+  "required": [
+    "id",
+    "type"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "bwpContext": {
+          "type": "string",
+          "enum": [
+            "DL",
+            "UL",
+            "SUL"
+          ],
+          "description": "It identifies whether the object is used for downlink, uplink or supplementary uplink."
+        },
+        "isInitialBwp": {
+          "type": "string",
+          "enum": [
+            "INITIAL",
+            "OTHER"
+          ],
+          "description": "It identifies whether the object is used for initial or other Bandwidth part (BWP)."
+        },
+        "subCarrierSpacing": {
+          "type": "string",
+          "enum": [
+            15,
+            30,
+            60,
+            120
+          ],
+          "description": "Subcarrier spacing configuration for a BWP."
+        },
+        "cyclicPrefix": {
+          "type": "string",
+          "enum": [
+            "NORMAL",
+            "EXTENDED"
+          ],
+          "description": "It identifies whether the object is used for initial or other Bandwidth part (BWP)."
+        },
+        "startRB": {
+          "type": "number",
+          "minimum": "0",
+          "description": [
+            [
+              "Offset in common resource blocks to common resource block 0 for the applicable subcarrier spacing for a BWP. This corresponds to N_BWP_start",
+              "see subclause 4.4.5 in TS 38.211 [32]. allowedValues: 0 to N_grid_size – 1",
+              "where N_grid_size equals the number of resource blocks for the BS channel bandwidth",
+              "given the subcarrier spacing of the BWP."
+            ]
+          ]
+        },
+        "numberOfRB": {
+          "type": "number",
+          "minimum": "1",
+          "description": [
+            [
+              "Number of physical resource blocks for a BWP (bandwidth part). This corresponds to N_BWP_size",
+              "see subclause 4.4.5 in TS 38.211 [32]. allowedValues: 1 to N_grid_size – startRB of the BWP. Se startRB for definition of N_grid_size."
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "license": "\"\""
+}

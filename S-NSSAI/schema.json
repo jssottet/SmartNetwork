@@ -1,0 +1,31 @@
+{
+  "/Instructions for creating your schema": {},
+  "$schema": "http://json-schema.org/schema",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.S-NSSAI /S-NSSAI /schema.json",
+  "title": "Smart Data models -S-NSSAI  schema\"",
+  "modelTags": "\"\"",
+  "description": "This Class represents an S-NSSAI. An NSSAI is a set of supported S-NSSAI(s), an S-NSSAI is comprised of an SST (Slice/Service type) and an optional SD (Slice Differentiator) field",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "sD": {
+          "type": "string",
+          "description": ""
+        },
+        "sST": {
+          "type": "number",
+          "maximum": "255",
+          "description": "This parameter specifies the slice/service type in a ServiceProfile to be supported by a network slice."
+        }
+      }
+    }
+  ],
+  "license": "\"\""
+}

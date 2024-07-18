@@ -1,0 +1,55 @@
+{
+  "/Instructions for creating your schema": {},
+  "$schema": "http://json-schema.org/schema",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.Beam /Beam/schema.json",
+  "title": "Smart Data models -Beam  schema\"",
+  "modelTags": "\"\"",
+  "description": "This Class represents  the per-Beam information required for, e.g. beam performance management utilizing measurements generated in the RAN.Measurements on common beams may be correlated with associated spatial beam information to assist use cases like troubleshooting performance problems, or SON functions like Coverage & Capacity Optimization.",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "beamIndex": {
+          "type": "number",
+          "description": "Index of the Beam."
+        },
+        "beamAzimut": {
+          "type": "number",
+          "minimum": "-1800",
+          "maximum": "1800",
+          "description": "The azimuth of a beam transmission, which means the horizontal beamforming pointing angle (beam peak direction) in the (Phi) φ-axis in 1/10th degree resolution."
+        },
+        "beamTilt": {
+          "type": "number",
+          "minimum": "-900",
+          "maximum": "900",
+          "description": "The tilt of a beam transmission, which means the vertical beamforming pointing angle (beam peak direction) in the (Theta) θ-axis in 1/10th degree resolution."
+        },
+        "beamHorizWidth": {
+          "type": "number",
+          "minimum": "0",
+          "maximum": "3599",
+          "description": "The Horizontal beamWidth of a beam transmission, which means the horizontal beamforming half-power (3dB down) beamwidth in the (Phi) φ-axis in 1/10th degree resolution."
+        },
+        "beamVertWidth": {
+          "type": "number",
+          "minimum": "0",
+          "maximum": "1800",
+          "description": "The Vertical beamWidth of a beam transmission, which means the vertical beamforming half-power (3dB down) beamwidth in the (Theta) θ-axis in 1/10th degree resolution."
+        },
+        "beamType": {
+          "type": "string",
+          "description": "allowed type : SSB-BEAM"
+        }
+      }
+    }
+  ],
+  "derivedFrom": "\"\"",
+  "license": "\"\""
+}
