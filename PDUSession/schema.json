@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema",
   "$schemaVersion": "0.0.1",
-  "$id": "https://smart-data-models.github.io/dataModel.BWP/BWP/schema.json",
-  "title": "Smart Data models - BWP schema",
+  "$id": "https://smart-data-models.github.io/dataModel.PDUSession/PDUSession/schema.json",
+  "title": "Smart Data models - PDUSession schema",
   "modelTags": "",
-  "description": "This class represents BWP",
+  "description": "This class represents PDUSession",
   "required": [
     "id",
     "type"
@@ -18,18 +18,22 @@
     },
     {
       "properties": {
-        "nrcelldu": {
-                "description": "Relationship to NRCellDU",
-                "format": "uri",
+        "id": {
+                "description": "Property",
+                "type": "integer"
+        },
+        "status": {
+                "description": "Property",
                 "type": "string"
         },
-        "numberofRBs": {
+        "timestamp": {
                 "description": "Property",
-                "type": "integer"
+                "type": "datetime"
         },
-        "subCarrierSpacing": {
-                "description": "Property",
-                "type": "integer"
+        "ue_1": {
+                "description": "Relationship to UE",
+                "format": "uri",
+                "type": "string"
         }
 }
     }
