@@ -1,0 +1,12 @@
+{
+  "id": "urn:ngsi-ld:TDD:TDD-001",
+  "type": "TDD",
+  "TDD": 10,
+  "arfcn": 10,
+  "nrcelldu_1": "urn:ngsi-ld:nrcelldu_1:nrcelldu_1-01",
+  "name": "example-name",
+  "description": "example-description",
+  "dateCreated": "2025-06-25T08:00:00Z",
+  "dateModified": "2025-06-30T14:15:00Z",
+  "source": "https://example.org/source"
+}
