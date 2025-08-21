@@ -21,7 +21,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. NGSI Entity type"
+          "description": "Property. NGSI Entity type",
           "enum": [
             "TDD"
           ]
