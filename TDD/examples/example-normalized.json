@@ -22,12 +22,12 @@
     "value": "https://example.org/source"
   },
   "band": {
-    "type": "Text",
-    "value": "255"
+    "type": "Number",
+    "value": 255
   },
   "arfcn": {
-    "type": "Text",
-    "value": "10"
+    "type": "Number",
+    "value": 10
   },
   "nrcelldu": {
     "type": "Relationship",

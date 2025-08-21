@@ -1,5 +1,5 @@
 {
-  "id": "urn:ngsi-ld:TDD:TDD-001",
+  "id": "TDD-001",
   "type": "TDD",
   "TDD": 10,
   "arfcn": 10,

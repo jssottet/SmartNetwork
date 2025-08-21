@@ -19,15 +19,15 @@
     {
       "properties": {
         "band": {
-                "description": "Property Model:'https://schema.org/Number'",
+                "description": "Property. Model:'https://schema.org/Number'.",
                 "type": "integer"
         },
         "arfcn": {
-                "description": "Property Model:'https://schema.org/Number'",
+                "description": "Property. Model:'https://schema.org/Number'.",
                 "type": "integer"
         },
         "nrcelldu_1": {
-                "description": "Relationship to NRCellDU model:'https://schema.org/URL'",
+                "description": "Relationship. reference to NRCellDU",
                 "format": "uri",
                 "type": "string"
         }
