@@ -16,8 +16,16 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },	
+    },
+    {
       "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity type"
+          "enum": [
+            "TDD"
+          ]
+        },	
         "band": {
                 "description": "Property. Model:'https://schema.org/Number'. band value",
                 "type": "integer"
@@ -31,7 +39,7 @@
                 "format": "uri",
                 "type": "string"
         }
-}
+      }
     }
   ],
   "derivedFrom": "3GPP TS 28.541",
