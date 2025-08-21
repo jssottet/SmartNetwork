@@ -21,10 +21,10 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. NGSI Entity type",
           "enum": [
             "TDD"
-          ]
+          ],
+          "description": "Property. NGSI Entity type"
         },	
         "band": {
                 "description": "Property. Model:'https://schema.org/Number'. band value",
