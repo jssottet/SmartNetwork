@@ -5,6 +5,7 @@
   "title": "Smart Data models - TDD schema",
   "modelTags": "",
   "description": "This class represents TDD",
+  "type": "object",
   "required": [
     "id",
     "type"
@@ -20,10 +21,10 @@
       "properties": {
         "type": {
           "type": "string",
+          "description": "Property. NGSI Entity type"
           "enum": [
             "TDD"
-          ],
-          "description": "Property. NGSI Entity type"
+          ]
         },	
       "properties": {
         "band": {
