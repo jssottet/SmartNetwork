@@ -16,16 +16,7 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Property. NGSI Entity type"
-          "enum": [
-            "TDD"
-          ]
-        },	
+    },	
       "properties": {
         "band": {
                 "description": "Property. Model:'https://schema.org/Number'. band value",
