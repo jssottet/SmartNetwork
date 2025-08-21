@@ -18,12 +18,20 @@
     },
     {
       "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "TDD"
+          ],
+          "description": "Property. NGSI Entity type"
+        },	
+      "properties": {
         "band": {
-                "description": "Property. Model:'https://schema.org/Number'.",
+                "description": "Property. Model:'https://schema.org/Number'. band value",
                 "type": "integer"
         },
         "arfcn": {
-                "description": "Property. Model:'https://schema.org/Number'.",
+                "description": "Property. Model:'https://schema.org/Number'. arfcn value",
                 "type": "integer"
         },
         "nrcelldu_1": {
