@@ -23,11 +23,11 @@
   },
   "band": {
     "type": "Text",
-    "value": "example-band"
+    "value": "255"
   },
   "arfcn": {
     "type": "Text",
-    "value": "example-arfcn"
+    "value": "10"
   },
   "nrcelldu": {
     "type": "Relationship",
