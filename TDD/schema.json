@@ -19,15 +19,15 @@
     {
       "properties": {
         "TDD": {
-                "description": "Property",
+                "description": "Property https://schema.org/Integer",
                 "type": "integer"
         },
         "arfcn": {
-                "description": "Property",
+                "description": "Property https://schema.org/Integer",
                 "type": "integer"
         },
         "nrcelldu_1": {
-                "description": "Relationship to NRCellDU",
+                "description": "Relationship to NRCellDU model: https://schema.org/URL",
                 "format": "uri",
                 "type": "string"
         }
