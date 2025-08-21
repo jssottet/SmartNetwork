@@ -1,7 +1,7 @@
 {
   "id": "TDD-001",
   "type": "TDD",
-  "TDD": 10,
+  "band": 10,
   "arfcn": 10,
   "nrcelldu_1": "urn:ngsi-ld:nrcelldu_1:nrcelldu_1-01",
   "name": "example-name",
