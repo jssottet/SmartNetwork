@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
-  "$id": "https://smart-data-models.github.io/dataModel.Class_Diagram/NRCellCU/schema.json",
-  "title": "Smart Data models - NRCellCU schema",
+  "$id": "https://smart-data-models.github.io/dataModel.Class_Diagram/TDD/schema.json",
+  "title": "Smart Data models - TDD schema",
   "modelTags": "",
-  "description": "This class represents NRCellCU for smart data models implementation",
+  "description": "This class represents TDD for smart data models implementation",
   "type": "object",
   "required": [
     "id",
@@ -22,21 +22,22 @@
         "type": {
           "type": "string",
           "enum": [
-            "NRCellCU"
+            "TDD"
           ],
           "description": "Property. NGSI Entity type"
         },
-        "nRcellId": {
+        "TDD": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. nRcellId value"
+          "description": "Property. Model:'https://schema.org/Text'. TDD value"
         },
-        "nrCellDU_by_duId": {
-          "type": "array",
-          "items": {
-            "description": "Relationship. Model:'https://schema.org/URL'. Reference to NRCellDU",
-            "type": "string",
-            "format": "uri"
-          }
+        "arfcn": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. arfcn value"
+        },
+        "nrcelldu_1": {
+          "description": "Relationship. Model:'https://schema.org/URL'. Reference to NRCellDU",
+          "type": "string",
+          "format": "uri"
         }
       }
     }

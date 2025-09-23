@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
-  "$id": "https://smart-data-models.github.io/dataModel.Class_Diagram/BWP/schema.json",
-  "title": "Smart Data models - BWP schema",
+  "$id": "https://smart-data-models.github.io/dataModel.Class_Diagram/PDUSession/schema.json",
+  "title": "Smart Data models - PDUSession schema",
   "modelTags": "",
-  "description": "This class represents BWP for smart data models implementation",
+  "description": "This class represents PDUSession for smart data models implementation",
   "type": "object",
   "required": [
     "id",
@@ -22,20 +22,24 @@
         "type": {
           "type": "string",
           "enum": [
-            "BWP"
+            "PDUSession"
           ],
           "description": "Property. NGSI Entity type"
         },
-        "numberofRBs": {
+        "timestamp": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. numberofRBs value"
+          "description": "Property. Model:'https://schema.org/Text'. timestamp value"
         },
-        "subCarrierSpacing": {
+        "status": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. subCarrierSpacing value"
+          "description": "Property. Model:'https://schema.org/Text'. status value"
         },
-        "nrcelldu": {
-          "description": "Relationship. Model:'https://schema.org/URL'. Reference to NRCellDU",
+        "id": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. id value"
+        },
+        "ue_1": {
+          "description": "Relationship. Model:'https://schema.org/URL'. Reference to UE",
           "type": "string",
           "format": "uri"
         }
